@@ -9,6 +9,8 @@
     <NeutralLanguage></NeutralLanguage>
     <Version>1.0.0</Version>
     <Description>Set of helper classes for app queues and background queue processors.</Description>
+    <RepositoryUrl>https://github.com/grendlerpl/BackgroundQ</RepositoryUrl>
+
   </PropertyGroup>
 
   <ItemGroup>
