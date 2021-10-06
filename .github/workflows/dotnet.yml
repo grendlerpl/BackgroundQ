@@ -18,6 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
         source-url: https://nuget.pkg.github.com/grendlerpl/index.json
+      env:
+        NUGET_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
     - name: Build
       run:  dotnet build -c Release BackgroundQ.csproj
     - name: Pack
