@@ -25,4 +25,4 @@ jobs:
     - name: Pack
       run: dotnet pack --configuration Release --include-symbols
     - name: Publish
-      run: dotnet nuget push BackgroundQ/bin/Release/*.nupkg --skip-duplicate
+      run: dotnet nuget push bin/Release/*.nupkg --skip-duplicate
