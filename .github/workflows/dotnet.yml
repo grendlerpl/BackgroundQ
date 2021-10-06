@@ -23,6 +23,6 @@ jobs:
     - name: Build
       run:  dotnet build -c Release BackgroundQ.csproj
     - name: Pack
-      run: dotnet pack --configuration Release --no-build --include-symbols -o ./
+      run: dotnet pack --configuration Release --include-symbols
     - name: Publish
       run: dotnet nuget push BackgroundQ/bin/Release/*.nupkg --skip-duplicate
