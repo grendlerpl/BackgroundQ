@@ -17,7 +17,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
+    - name: Build
+      run:  dotnet build -c Release BackgroundQ.csproj
     - name: Pack
-      run: dotnet pack --configuration Release --include-symbols
+      run: dotnet pack --configuration Release --no-build --include-symbols
     - name: Publish
       run: dotnet nuget push *.nupkg -s https://nuget.pkg.github.com/grendlerpl/index.json -k ${{ secrets.GITHUB_TOKEN }} --skip-duplicate
