@@ -7,6 +7,7 @@
     <Company>CodeServicePL</Company>
     <Authors>Jaroslaw Danilczuk</Authors>
     <NeutralLanguage></NeutralLanguage>
+    <PackageId>CodeServiceJD.BackgroundQ</PackageId>
     <Version>1.0.1</Version>
     <Description>Set of helper classes for app queues and background queue processors.</Description>
     <RepositoryUrl>https://github.com/grendlerpl/BackgroundQ</RepositoryUrl>
